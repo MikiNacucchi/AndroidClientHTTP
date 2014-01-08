@@ -12,7 +12,7 @@ Examples
 
 
 Build an Uri:
-  
+`````java
   Uri httpGetUri = new Uri.Builder() 
   	.scheme("http")
   	.authority("dev.mikinacucchi.it")
@@ -29,9 +29,9 @@ Build an Uri:
   	if(D)Log.e(TAG, "HttpPost: IllegalArgumentException");
   }    	
 
-
+`````
 Send Request to Server and callback 
-
+`````java
   new RequestHTTP( 
     httpget, 
     new RequestHTTP.Response() {			
@@ -67,4 +67,5 @@ Send Request to Server and callback
   			
   		}					
     }
-  );	
+  );
+`````
