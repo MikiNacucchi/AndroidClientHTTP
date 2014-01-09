@@ -3,8 +3,8 @@
 
 ##HTTP client: GET, POST, JSON example
 
-Simple class to send HTTP request with callback result for use in Activity.
-The class RequestHTTP use an AsyncTask to execute the request in background.
+Simple class to use for sending HTTP request with callback function with result or error returned.
+The class RequestHTTP use an AsyncTask to execute the request in background, so it's easy to use in Activities.
 
 
 Examples
@@ -30,7 +30,7 @@ Build an Uri:
   }    	
 
 `````
-Send Request to Server and callback 
+Send Request to Server
 `````java
   new RequestHTTP( 
     httpget, 
